@@ -6,12 +6,22 @@ const listaCompleta = document.querySelector(".listaItens")
 let minhaListadeItens = []
 
 function adicionarNovaTarefa() {
-    minhaListadeItens.push({
-        item: inputTask.value,
-        concluida: false,
-    })
+
+    if(!inputTask.value){
+        inputTask.style.border = '1px solid red'
+        alert('Digite algo para inserir em sua lista')
+    } else {
+
+        minhaListadeItens.push({
+            item: inputTask.value,
+            concluida: false,
+        })
+        
+        inputTask.style.border = ''
+    }
 
     inputTask.value = ''; //para limpar
+    inputTask.focus()
 
     mostrarTarefas()
 }
@@ -61,6 +71,8 @@ function recarregarTarefas() {
 
     mostrarTarefas()
 }
+
+
 
 
 recarregarTarefas()
