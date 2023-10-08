@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #25283f;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.container-input-text{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inputText{
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0px 5px ;
+    padding: 5px;
+}
+
+.btnAdicionar{
+    width: 40px;
+    height: 35px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+.container-lista{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.titulo-lista{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 15px;
+    width: 340px;
+    border-radius: 5px;
+}
+
+.icone-edit{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.titulo{
+    margin: 0 auto;
+}
+
+.lista{
+ width: 100%;
+ align-items: center;
+ text-decoration: none;
+ list-style: none;
+ padding: 20px;
+}
+
+.task{
+    background-color: #F2F2F2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.done{
+    background-color: rgb(12, 153, 106);
+    text-decoration: line-through;
+}
+
+.fa-check:hover{
+    color: rgb(12, 153, 106);
+    transition: all 0.5s;
+}
+
+.fa-trash:hover{
+    color: #a10815;
+    transition: all 0.5s;
+}
